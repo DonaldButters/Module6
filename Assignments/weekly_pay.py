@@ -1,4 +1,4 @@
-from Assignments import hourly_employee_input
+
 def weekly_pay():
     hours_worked = int(input('Please enter your work hours. :'))
     hourly_pay_rate = int(input('Please re-enter your hourly pay rate :'))
