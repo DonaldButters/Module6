@@ -30,12 +30,19 @@ if pay_rate in range(7,500): # handle the bad
 else:
     input('Please re-enter a valid number :')
 
-def weekly_pay():
-    hours_worked = int(input('Please enter your work hours. :'))
-    hourly_pay_rate = pay_rate
-    weekly_pay=(hours_worked * hourly_pay_rate)
-    return weekly_pay
-print('Your pay this week is', weekly_pay())
+    def weekly_pay():
+        return hourly_pay_rate * weekly_pay()
+
+
+hours_worked = int(input('Please enter your work hours. :'))
+hourly_pay_rate = pay_rate
+weekly_pay=(hours_worked * hourly_pay_rate)
+
+
+print('Name:',name,)
+print('Age:',age,)
+print('Rate:',pay_rate,)
+print('Your pay this week is', weekly_pay,)
 
 
 
