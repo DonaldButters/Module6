@@ -7,7 +7,7 @@ Author: Donald Butters
 Last date modified: 10/5/2020
 
 The purpose of this program is prompt a name, age, and hourly pay.
-It then imports a function from weekly_pay.py and runs that function
+It then defines a function to add an hourly pay rate and runs that function
 Then the program out prints the new input
 
 """
@@ -29,5 +29,13 @@ if pay_rate in range(7,500): # handle the bad
     print("Thank you")
 else:
     input('Please re-enter a valid number :')
-from Assignments import weekly_pay # imports weekly_pay and runs it
+
+def weekly_pay():
+    hours_worked = int(input('Please enter your work hours. :'))
+    hourly_pay_rate = pay_rate
+    weekly_pay=(hours_worked * hourly_pay_rate)
+    return weekly_pay
+print('Your pay this week is', weekly_pay())
+
+
 
