@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 """
 
 Program: string_functions.py
@@ -18,8 +18,7 @@ and then print the persons name the same number as their lucky number
 
 
 """
-=======
->>>>>>> origin/master
+
 def multiply_string():
     x = input('Enter your name: ')
     n = int(input('Enter your lucky number between 1-9:'))
